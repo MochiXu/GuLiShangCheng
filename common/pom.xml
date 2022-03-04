@@ -31,6 +31,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.8</version>
         </dependency>
+<!--        新增数据库驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.25</version>
+        </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>

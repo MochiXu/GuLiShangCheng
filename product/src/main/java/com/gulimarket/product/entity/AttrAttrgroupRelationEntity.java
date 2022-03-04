@@ -20,7 +20,7 @@ public class AttrAttrgroupRelationEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * id
+	 * id、@TableId表示此字段是一个主键
 	 */
 	@TableId
 	private Long id;

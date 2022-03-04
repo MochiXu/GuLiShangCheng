@@ -13,6 +13,8 @@ import java.util.Map;
  * @email xmc1202@gmail.com
  * @date 2022-03-04 16:45:49
  */
+
+//通用IService--进一步封装：采用 get 查询单行, remove 删除, list 查询集合, page 分页
 public interface AttrAttrgroupRelationService extends IService<AttrAttrgroupRelationEntity> {
 
     PageUtils queryPage(Map<String, Object> params);

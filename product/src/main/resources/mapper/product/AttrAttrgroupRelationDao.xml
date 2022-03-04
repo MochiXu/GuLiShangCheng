@@ -3,7 +3,7 @@
 
 <mapper namespace="com.gulimarket.product.dao.AttrAttrgroupRelationDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
+	<!-- 自定义映射resultMap，用于处理字段与属性的映射关系 -->
     <resultMap type="com.gulimarket.product.entity.AttrAttrgroupRelationEntity" id="attrAttrgroupRelationMap">
         <result property="id" column="id"/>
         <result property="attrId" column="attr_id"/>

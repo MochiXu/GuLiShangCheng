@@ -15,7 +15,7 @@ import com.gulimarket.product.service.AttrAttrgroupRelationService;
 import com.common.utils.PageUtils;
 import com.common.utils.R;
 
-
+//控制层，响应前端请求并返回数据
 
 /**
  * 属性&属性分组关联
@@ -25,6 +25,8 @@ import com.common.utils.R;
  * @date 2022-03-04 18:20:09
  */
 @RestController
+/*相当于@Controller+@ResponseBody两个注解的结合，返回json数据不需要在方法前面加@ResponseBody注解了
+但使用@RestController这个注解，就不能返回jsp,html页面，视图解析器无法解析jsp,html页面*/
 @RequestMapping("product/attrattrgrouprelation")
 public class AttrAttrgroupRelationController {
     @Autowired
