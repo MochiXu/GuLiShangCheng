@@ -16,7 +16,7 @@ import java.util.Map;
 
 //通用IService--进一步封装：采用 get 查询单行, remove 删除, list 查询集合, page 分页
 public interface AttrAttrgroupRelationService extends IService<AttrAttrgroupRelationEntity> {
-
+    //queryPage是按照分页进行查询
     PageUtils queryPage(Map<String, Object> params);
 }
 
