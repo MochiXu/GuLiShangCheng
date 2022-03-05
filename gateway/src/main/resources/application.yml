@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: gulimarket-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: test_route1
+          uri: https://www.baidu.com
+          predicates:
+            - Query=url, baidu
+        - id: test_route2
+          uri: https://www.qq.com
+          predicates:
+            - Query=url, qq #http://127.0.0.1:88/?url=qq访问此链接即可跳转
+server:
+  port: 88
