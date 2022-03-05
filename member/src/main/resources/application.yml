@@ -19,3 +19,8 @@ mybatis-plus:
       id-type: auto
 server:
   port: 8000
+  servlet:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true

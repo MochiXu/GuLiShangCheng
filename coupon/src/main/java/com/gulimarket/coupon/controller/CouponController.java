@@ -30,6 +30,14 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    //用于测试服务之间的相互调用
+    @RequestMapping("/member/list")
+    public R memberCoupons(){
+        CouponEntity couponEntity=new CouponEntity();
+        couponEntity.setCouponName("满100减100");
+        return R.ok().put("coupons",Arrays.asList(couponEntity));
+    }
+
     /**
      * 列表
      */
