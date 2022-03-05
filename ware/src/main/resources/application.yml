@@ -11,6 +11,11 @@ spring:
         server-addr: 127.0.0.1:8848
   application:
     name: gulimarket-ware
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
@@ -19,3 +24,7 @@ mybatis-plus:
       id-type: auto
 server:
   port: 11000
+management:
+  endpoint:
+    refresh:
+      enabled: true
