@@ -1,32 +1,32 @@
-spring:
-  datasource:
-    username: xmc
-    password: 294207
-    url: jdbc:mysql://192.168.3.21:3306/gulimarket_sms
-    driver-class-name: com.mysql.jdbc.Driver
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-  application:
-    name: gulimarket-coupon
-  http:
-    encoding:
-      force: true
-      charset: utf-8
-      enabled: true
-
-mybatis-plus:
-  mapper-locations: classpath:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
-server:
-  port: 7000
-management:
-  endpoint:
-    refresh:
-      enabled: true
-logging:
-  level:
-    com.alibaba.nacos.client.config.impl: WARN
+#spring:
+#  datasource:
+#    username: xmc
+#    password: 294207
+#    url: jdbc:mysql://192.168.3.21:3306/gulimarket_sms
+#    driver-class-name: com.mysql.jdbc.Driver
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#  application:
+#    name: gulimarket-coupon
+#  http:
+#    encoding:
+#      force: true
+#      charset: utf-8
+#      enabled: true
+#
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#server:
+#  port: 7000
+#management:
+#  endpoint:
+#    refresh:
+#      enabled: true
+#logging:
+#  level:
+#    com.alibaba.nacos.client.config.impl: WARN

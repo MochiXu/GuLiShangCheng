@@ -22,6 +22,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *  5.配置分组：GROUP，默认所有的配置集都属于DEFAULT_GROUP，类比namespace，语法是一样的
  *
  *  从nacos配置中心中同时加载多个配置集
+ *  1.微服务的任何配置信息，任何配置文件都能够放在配置中心
+ *  2.只需要在bootstrap.properties中说明需要加载配置中心的哪些文件即可
+ *  3.以前SpringBoot中从配置文件中获取值的方法都能在nacos上使用
+ *  4.暂时只移植了一个coupon，开发阶段写在本地比较方便
  * */
 
 
