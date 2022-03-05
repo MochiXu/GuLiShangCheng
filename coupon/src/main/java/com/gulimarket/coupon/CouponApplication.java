@@ -13,6 +13,15 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * 5.动态获取配置
  *  @RefreshScope:动态获取并刷新配置
  *  @Value("${配置项名}"):获取到配置
+ *
+ *  使用nacos命名空间进行配置隔离
+ *  1.可以根据微服务、环境（开发/测试/生产）进行隔离
+ *  2.每个微服务之间相互隔离，可以仅加载自己命名空间下的所有配置文件
+ *  3.配置集：所有配置的集合
+ *  4.配置集ID：相当于配置文件名，类似于nacos的data id
+ *  5.配置分组：GROUP，默认所有的配置集都属于DEFAULT_GROUP，类比namespace，语法是一样的
+ *
+ *  从nacos配置中心中同时加载多个配置集
  * */
 
 

@@ -28,3 +28,6 @@ management:
   endpoint:
     refresh:
       enabled: true
+logging:
+  level:
+    com.alibaba.nacos.client.config.impl: WARN
