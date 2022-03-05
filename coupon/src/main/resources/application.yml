@@ -4,6 +4,13 @@ spring:
     password: 294207
     url: jdbc:mysql://192.168.3.21:3306/gulimarket_sms
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: gulimarket-coupon
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:

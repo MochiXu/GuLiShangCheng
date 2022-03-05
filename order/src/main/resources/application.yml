@@ -4,6 +4,14 @@ spring:
     password: 294207
     url: jdbc:mysql://192.168.3.21:3306/gulimarket_oms
     driver-class-name: com.mysql.jdbc.Driver
+  #nacos注册中心配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: gulimarket-order
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
